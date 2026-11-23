@@ -1,0 +1,37 @@
+[
+  {
+    "file": "Mod1.mlx",
+    "original_sha256": "9be90479cb612d51733fb507fc492f5c2be3ebe660281f2bd9d8bb5e1c99b84f",
+    "corrected_sha256": "ba6f3c62e3587dee7cbce4bb2bf4c2e0f04b35f7bb6083faec44ea484b45e860"
+  },
+  {
+    "file": "Mod2.mlx",
+    "original_sha256": "af70c1cadf4818c4776c74be08012b0dbfcff9f55b0097d8d22adf1f6cad724c",
+    "corrected_sha256": "3580c017f3899a7045c2a217f9699e0c43f80f121b48e97b62305243295feb06"
+  },
+  {
+    "file": "Mod3.mlx",
+    "original_sha256": "aadd49eebb584332798bbea0ec06b10abe181028a3f6c7d6092036c19f8d8a33",
+    "corrected_sha256": "201ef37b24c0c30b1aa1d51fc1c1bdf66792a93d5b4992b945f45b37f8a6eaac"
+  },
+  {
+    "file": "Mod4_c1.mlx",
+    "original_sha256": "15eb2e80b2ec86bdd72b1f1b21dae478c0a5d1eb2deaebf45173897f93844fee",
+    "corrected_sha256": "af52b59468bf33cd4e763a40328806e7837e52040475a2896603b2e2714c978b"
+  },
+  {
+    "file": "R_Analisis_Sobol.txt",
+    "original_sha256": "98a430d5a1a83039c304e798b546ca18091f9f011e1d2d4f18232b978ffd66f5",
+    "corrected_sha256": "63f851a9f584066d1cd46f63636ff8366c261138c2b81f0f41e13700ca9c1ce0"
+  },
+  {
+    "file": "modelo_SA_retrofit_dinamico.R",
+    "original_sha256": "8b9913d83987ab174e2ed79340c6d57b177d2fd34b5ace483c609aaef468254a",
+    "corrected_sha256": "5da7805cad766b53331ec9cdab18c51d7ba945ae2e23148a4c40384bdd915e86"
+  },
+  {
+    "file": "paper_sobol_reproducible.R",
+    "original_sha256": "80228d63d12ad447fe0e7bbf8699d2c271742b924c0c5eb7d269a8857fe04e31",
+    "corrected_sha256": "3efec82aa05f78937078cec85e77df7132ec7b8f62b1d5a725e2893e4c986333"
+  }
+]
