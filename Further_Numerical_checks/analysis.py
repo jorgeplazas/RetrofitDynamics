@@ -1,6 +1,5 @@
-"""Independent checks reconstructed from the equations printed in the manuscript.
-
-This supplementary calculation does not replace the authors' original R pipeline.
+"""Independent checks reconstructed from the main equations in the article.
+This supplementary computation does not replace the original R pipeline.
 """
 import json
 import time
