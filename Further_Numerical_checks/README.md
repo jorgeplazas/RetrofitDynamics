@@ -1,10 +1,7 @@
-# Independent numerical checks for Reviewer 6
+# Further numerical checks
 
-These supplementary calculations were reconstructed from Equations (1)-(3),
-Tables 1 and 4, and the initial conditions printed in the supplied revised
-manuscript. They are new checks prepared on 1 November 2026. They do not replace
-the authors' original R/MATLAB implementation, time-dependent sensitivity
-figures, or the full reproducibility archive mentioned in the manuscript.
+These supplementary computations arise from Equations (1)-(3),
+Tables 1 and 4, and the initial conditions printed in the article.
 
 ## Run
 
@@ -16,22 +13,18 @@ python3 analysis.py
 
 The supplied outputs were generated with NumPy 2.3.5 and SciPy 1.17.0. The
 `results` directory contains all evaluated input designs, cumulative outputs,
-bootstrap estimates, summary indices and factorial results. No empirical
-calibration is performed or claimed.
+bootstrap estimates, summary indices and factorial results.
 
 ## Cumulative-output sensitivity
 
 The parameter order is a11, a12, a21, a22, beta, eta, gamma, delta. The main
 independent uniform distributions are exactly the printed Table 4 ranges.
-The equal-relative-range variant replaces eta in [0.30, 0.90] with eta in
-[0.54, 0.66], retaining the other ranges.
 
 Each distribution set is analysed with (1) fixed initial states, (2) uncertain
 initial activity only, and (3) all three initial states uncertain. The assumed
 initial-state ranges are x0 in [4.5e11, 5.5e11] pkm/year, y0 in [0.9e9, 1.1e9]
 kg/year, and z0 in [0.09, 0.11]. These are exploratory +/-10% perturbations,
-not empirically estimated distributions. Dependence between states and
-parameters is not inferred or tested.
+not empirically estimated distributions. 
 
 Two independent NumPy default_rng seeds, 20261101 and 20261102, are used with
 N=1000 rows in each of A and B. These are new Python designs, not the original
@@ -41,7 +34,7 @@ and 1-correlation(A, AB_i) for ST, as specified in the manuscript. Bootstrap
 intervals are pointwise 95% percentile intervals from 200 paired-row resamples,
 using a separate RNG with seed increased by 100. Raw estimates are retained.
 Nonzero S1 estimates for nearly irrelevant inputs can be dominated by Monte
-Carlo error. They are not interpreted as evidence of effects exceeding ST.
+Carlo error. 
 
 E(50) is computed by augmenting the numerical integration with E'=y, E(0)=0.
 The original three governing equations are unchanged. Scaled state variables
@@ -52,7 +45,7 @@ from each design are checked against DOP853 with rtol=1e-11, atol=1e-13 and
 maximum step 0.1 year. A full-design step-refinement check at 0.025 year is
 included for the main-range, all-initial-states design with seed 20261101.
 The observed maximum relative difference in this full-design refinement was
-2.77e-10. This is numerical verification, not empirical validation.
+2.77e-10. 
 
 Every integration step is checked for the physical domain. Domain extrema
 and solver comparisons are recorded in analysis_results.json. Do not
