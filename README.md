@@ -10,7 +10,7 @@ and (ii) perform the **time‑resolved global sensitivity analysis** reported in
 
 ---
 
-## 1. Repository layout (proposed)
+## 1. Repository layout
 
 ```text
 code/
@@ -191,36 +191,9 @@ If you deposit this code in a repository (e.g., Zenodo/Mendeley Data), include t
 
 ---
 
-## 12. Contact
 
-Corresponding author: *Francisco A. Buendía Hernández*  
-Email: *franciscoantonio.bue@uah.es*
 
----
 
-## 13. Missing files checklist (to be completed by the author)
-
-Mark ✅ when provided; otherwise attach the file(s) and keep the relative paths used above.
-
-- [ ] `code/matlab/run_scenarios.m`
-- [ ] `code/matlab/src/model_odes.m`
-- [ ] `code/matlab/src/params_default.m`
-- [ ] `code/matlab/src/demand_module.m`
-- [ ] `code/matlab/src/retrofit_adoption.m`
-- [ ] `code/matlab/src/emission_intensity.m`
-- [ ] `code/matlab/src/utils/configure_paths.m`
-- [ ] `code/matlab/src/utils/save_results.m`
-- [ ] `code/matlab/src/utils/plot_trajectories.m`
-- [ ] `code/r/run_sensitivity.R`
-- [ ] `code/r/src/sensitivity_setup.R`
-- [ ] `code/r/src/sobol_indices.R`
-- [ ] `code/r/src/time_resolved_sensitivity.R`
-- [ ] `code/r/src/plots_sensitivity.R`
-- [ ] `code/r/src/utils_io.R`
-- [ ] `data/input/fleet_baseline.csv`
-- [ ] `data/input/retrofit_options.csv`
-- [ ] `data/input/demand_baseline.csv`
-- [ ] `data/input/emission_factors.csv`
 
 ```
 Tip: keep file names short (ASCII) and avoid spaces/symbols to prevent upload issues in Editorial
